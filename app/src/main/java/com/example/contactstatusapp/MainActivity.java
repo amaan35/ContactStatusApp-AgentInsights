@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         EditText statusEDT = findViewById(R.id.statusEdittext);
         Button saveButton = findViewById(R.id.saveButton);
-        SwitchMaterial toggle = findViewById(R.id.switchBtn);
+        toggle = findViewById(R.id.switchBtn);
         SharedPreferences sharedPreferences = getSharedPreferences("STATUS_HANDLER", MODE_PRIVATE);
         String customStatus = sharedPreferences.getString("status", "");
         statusEDT.setText(customStatus);
